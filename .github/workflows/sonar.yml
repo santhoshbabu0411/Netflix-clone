@@ -44,7 +44,7 @@ jobs:
           docker push santhoshbabu0411/netflix:latest
         env:
            DOCKER_CLI_ACI: 1
-
+           
 deploy:
   needs: build-analyze-scan
   runs-on: [aws-netflix]
