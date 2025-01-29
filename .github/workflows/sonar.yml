@@ -53,4 +53,5 @@ deploy:
       run: docker pull santhoshbabu/netflix:latest
     - name: Trivy image scan
       run: trivy image santhoshbabu/netflix:latest
-    - name: Run the container netflix        run: docker run -d --name netflix -p 8081:80 santhoshbabu0411/netflix:latest
+    - name: Run the container netflix       
+      run: docker run -d --name netflix -p 8081:80 santhoshbabu0411/netflix:latest
